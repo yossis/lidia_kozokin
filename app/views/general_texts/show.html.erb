@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Text name:</b>
+  <%= @general_text.text_name %>
+</p>
+
+<p>
+  <b>Text value:</b>
+  <%= @general_text.text_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_general_text_path(@general_text) %> |
+<%= link_to 'Back', general_texts_path %>
