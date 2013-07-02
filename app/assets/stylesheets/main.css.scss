@@ -1,1 +1,74 @@
 @import "bootstrap";
+@import "bootstrap-responsive";
+
+body {
+	font-family: 'Questrial', sans-serif;
+}
+
+header {
+	.nav {
+		font-size: 20px;
+	}
+}
+
+
+.profile {
+
+	background-color: #F5F5F5;
+	padding-top: 95px;
+	min-height: 750px;
+	.container {
+		.big-doll {
+			background: url('big-doll.png') no-repeat;
+			width: 126px;
+			height: 300px;
+			
+		}
+		.profile-container {
+			position: relative;
+			max-width: 860px;
+			margin: 0 auto;
+			.span7 {
+				margin-left: 0;
+			}
+			
+			.cloud {
+				background: url('cloud.png') no-repeat;
+				width: 209px;
+				height: 164px;
+				position: relative;
+				top: 30px; left: 72px;
+			}
+			h1 {
+				font-size: 90px;
+				margin: 54px 0 47px;
+				span {
+					color: #8EC63F;
+				}
+			}
+			h2 {
+				font-size: 78.5px;
+				span {
+					color: #8EC63F;
+				}
+			}
+			.profile-title {
+				font-size: 20px;
+				margin-top: 35px;
+			}
+		}
+	}
+
+}
+
+.portfolio {
+	background-color: #F2F2F2;
+}
+
+.about {
+	background-color: #E6E6E6;
+}
+
+.contact {
+	background-color: #1F1F21;
+}
