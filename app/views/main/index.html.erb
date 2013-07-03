@@ -18,24 +18,13 @@
 	</div>
 </div>
 <!-- Portfolio -->
-<div class="portfolio">
-	<div class="container">
-		<h1>Portfolio</h1>
-	</div>
-</div>
-<!-- About -->
-<div class="about">
-	<div class="container">
-		<h1>About</h1>
-		<div class="hr"></div>
-		<div><%= @texts[:about_bold] %></div>
-		<div><%= @texts[:about_content] %></div>
-	</div>
+<%= render 'portfolio' %>
 
-</div>
+<!-- About -->
+<%= render 'about' %>
 
 <!-- Contact us -->
-<div class="contact">
+<div class="contact section">
 	<div class="container">
 		<h1>Contact Me</h1>
 		<div class="hr"></div>
