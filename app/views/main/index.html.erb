@@ -28,6 +28,27 @@
 	<div class="container">
 		<h1>Contact Me</h1>
 		<div class="hr"></div>
+		<div class="row">
+			<div class="span3">
+				<p><%= @texts[:contact_description] %></p>
+				<div>Call me or message me:</div>
+				<div class="green-label"><%= @texts[:contact_phone] %></div>
+				<div>Email me:</div>
+				<div class="green-label"><%= @texts[:contact_email] %></div>
+
+
+
+			</div>
+			<div class="span8">
+				<%= render 'messages/form'  %>
+			</div>
+			
+		</div>
+		<div class="footer">
+				<span class="footer-doll"></span>
+				<span><span class="footer-label">design by</span> Kozokin Lidia</span>
+
+			</div>
 	</div>
 
 

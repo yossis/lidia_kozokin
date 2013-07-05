@@ -7,7 +7,7 @@ class GeneralText < ActiveRecord::Base
 
  def self.hash
   h={}
-  self.all.each {|c| h[c.text_name.to_sym]=c.text_value}
+  self.all.each {|c| h[c.text_name.to_sym]=c.text_value.to_s}
   h
  end
 

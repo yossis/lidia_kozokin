@@ -1,4 +1,7 @@
 LidiaKozokin::Application.routes.draw do
+  resources :messages
+
+
   get "main/index"
 
   resources :general_texts

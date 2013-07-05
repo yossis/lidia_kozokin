@@ -5,13 +5,17 @@ body {
 	font-family: 'Questrial', sans-serif;
 }
 
+.navbar-inverse .navbar-inner {
+	background-color: #212121;
+}
+
 header {
 	nav {
 		display: inline-block;
 		margin-top: 25px !important;
 	}
 	#logo {
-		background: url('logo.png') no-repeat center center;
+		background: url('logo-black.png') no-repeat center center;
 		width: 234px;
 		height: 77px;
 		display: inline-block;
@@ -80,6 +84,11 @@ header {
 		background-color: #F2F2F2;
 		top: 50px;
 		padding: 0 5px;
+		text-align: center;
+	}
+	.row {
+		margin: 0 auto;
+		display: inline-block;
 	}
 }
 
@@ -105,10 +114,10 @@ header {
 			margin: 0 10px;
 			font-size: 17px;
 		}
-		.row {
+		/*.row {
 			margin: 0 auto;
 			display: inline-block;
-		}
+		}*/
 	}
 }
 
@@ -140,12 +149,54 @@ header {
 		height: 100px; 
 		line-height: 100px;
 		border: 1px solid;
+		margin:10px;
+		display: inline-block;
+		font-size: 18px;
 	}
+	/*.row {
+			margin: 0 auto;
+			display: inline-block;
+		}*/
 
 }
 
 .contact {
+	color: #6C6C6C;
 	background-color: #1F1F21;
+	font-size: 17px;
+	text-align: center;
+	h1 {
+		background-color: #1F1F21;
+		color: #373739;
+	}
+	.hr {
+		background: -webkit-linear-gradient(left,rgba(228, 228, 228, 0) 0,#1F1F21 50%,#1F1F21 50%,rgba(228, 228, 228, 0) 99%);
+		background: -moz-linear-gradient(left,rgba(228, 228, 228, 0) 0,#1F1F21 50%,#1F1F21 50%,rgba(228, 228, 228, 0) 99%);
+		background: -o-linear-gradient(left,rgba(228, 228, 228, 0) 0,#1F1F21 50%,#1F1F21 50%,rgba(228, 228, 228, 0) 99%);
+		background: -ms-linear-gradient(left,rgba(228, 228, 228, 0) 0,#1F1F21 50%,#1F1F21 50%,rgba(228, 228, 228, 0) 99%);
+		background: linear-gradient(left,rgba(228, 228, 228, 0) 0,#1F1F21 50%,#1F1F21 50%,rgba(228, 228, 228, 0) 99%);
+
+	}
+	.row {
+		text-align: left;
+	}
+}
+
+.footer {
+	padding-top: 20px;
+	text-align: center;
+	span {
+		display: inline-block;
+	}
+	.footer-doll {
+		background: url('small-doll.png') no-repeat center center;
+		width: 49px;
+		height: 76px;
+
+	}
+	.footer-label {
+		color:#ACACAC;
+	}
 }
 
 
@@ -153,6 +204,9 @@ header {
 /* -----------------------------------------
    10. ADDITIONAL STYLES SECTION
 ----------------------------------------- */
+.green-label {
+	color: #8EC63F;
+}
 .hr,
 .hrc,
 .tmhr {
