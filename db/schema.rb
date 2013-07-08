@@ -11,11 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130705055933) do
+ActiveRecord::Schema.define(:version => 20130706223705) do
 
   create_table "general_texts", :force => true do |t|
     t.string   "text_name"
     t.text     "text_value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "image_types", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -27,6 +33,16 @@ ActiveRecord::Schema.define(:version => 20130705055933) do
     t.text     "message"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "name"
+    t.integer  "image_type_id"
+    t.string   "thumb_src"
+    t.text     "image_src"
+    t.text     "description"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

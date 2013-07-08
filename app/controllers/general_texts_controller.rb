@@ -1,6 +1,8 @@
 class GeneralTextsController < ApplicationController
   # GET /general_texts
   # GET /general_texts.json
+  layout 'admin'
+
   def index
     @general_texts = GeneralText.all
 

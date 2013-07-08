@@ -1,4 +1,4 @@
-<div class="profile">
+<div id="profile" class="profile">
 	<div class="container">
 		<div class="profile-container">
 			<div class="cloud"></div>
@@ -17,24 +17,30 @@
 		</div>
 	</div>
 </div>
+
 <!-- Portfolio -->
 <%= render 'portfolio' %>
+
 
 <!-- About -->
 <%= render 'about' %>
 
 <!-- Contact us -->
-<div class="contact section">
+<div id="contact" class="contact section">
 	<div class="container">
 		<h1>Contact Me</h1>
 		<div class="hr"></div>
 		<div class="row">
 			<div class="span3">
-				<p><%= @texts[:contact_description] %></p>
-				<div>Call me or message me:</div>
-				<div class="green-label"><%= @texts[:contact_phone] %></div>
+				<div><%= @texts[:contact_description] %></div>
+				<p>
+					<div>Call me or message me:</div>
+					<div class="green-label"><%= @texts[:contact_phone] %></div>
+				</p>
+				<p>
 				<div>Email me:</div>
 				<div class="green-label"><%= @texts[:contact_email] %></div>
+			</p>
 
 
 

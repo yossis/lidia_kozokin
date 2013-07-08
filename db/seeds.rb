@@ -10,3 +10,8 @@ GeneralText.create({:text_name => 'about_bold', :text_value => 'Lorem ipsum dolo
 GeneralText.create({:text_name => 'about_content', :text_value => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae vestibulum lectus. Ut placerat purus id tellus egestas, nec mattis velit vulputate. Aliquam condimentum neque eget nisl iaculis, sedLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae vestibulum lectus. Ut placerat purus id tellus egestas, nec mattis velit vulputate. Aliquam condimentum neque eget nisl iaculis, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae vestibulum lectus. Ut placerat purus id tellus egestas, nec mattis velit vulputate. Aliquam condimentum neque eget nisl iaculis, sed'})
 GeneralText.create({:text_name => 'contact_email', :text_value => 'lidia@kozokin.com'})
 GeneralText.create({:text_name => 'contact_phone', :text_value => '+972-50-5555556'})
+
+ImageType.create({name: 'Flash banners'})
+ImageType.create({name: 'Gif banners'})
+ImageType.create({name: 'Newslaters'})
+ImageType.create({name: 'Websites'})

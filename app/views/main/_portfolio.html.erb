@@ -1,17 +1,43 @@
-<div class="portfolio section">
+<div id="portfolio" class="portfolio section">
+	<div class="href-sperator"></div>
 	<div class="container">
 		<h1>Portfolio</h1>
 		<div class="hr"></div>
 		<!--portfolio nav -->
-		<div class="row">
-			<div class="span2"><div class="circle circle-portfolio circle-shadow">FLASH BANNERS</div></div>
-			<div class="span2"><div class="circle circle-portfolio circle-shadow">GIF BANNERS</div></div>
-			<div class="span2"><div class="circle circle-portfolio circle-shadow">NEWSLATERS</div></div>
-			<div class="span2"><div class="circle circle-portfolio circle-shadow">WEBSITES</div></div>
+		<div class="row" id="options">
+			<div class="span2"><a href="#filter" data-filter="*"><div class="circle circle-portfolio circle-shadow">ALL</div></a></div>
+			<div class="span2"><a href="#filter" data-filter=".flash_banners"><div class="circle circle-portfolio circle-shadow">FLASH BANNERS</div></a></div>
+			<div class="span2"><a href="#filter" data-filter=".gif_banners"><div class="circle circle-portfolio circle-shadow">GIF BANNERS</div></a></div>
+			<div class="span2"><a href="#filter" data-filter=".newlaters"><div class="circle circle-portfolio circle-shadow">NEWSLATERS</div></a></div>
+			<div class="span2"><a href="#filter" data-filter=".websites"><div class="circle circle-portfolio circle-shadow">WEBSITES</div></a></div>
 		</div>
 
+<!-- start: Portfolio -->
+	 <div class="span12 offset1">
+  	
+    	<section id="projects">
+	    	<ul id="thumbs">
+	        <% @photos.each do |photo| %>
+						<!-- Item Project and Filter Name -->
+        		<li class="item-thumbs span3 design <%= photo.image_type.name.sub(' ' , '_').downcase %>" >
+                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="<%= photo.name%>" href="<%= photo.image_src%>">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-search"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img src="<%= photo.image_src%>" alt="<%= photo.description%>">
+            </li>
+	        <% end %>
+	        	<!-- End Item Project -->
+	       </ul>
+        </section>
+      
+  	
+   </div>
+  <!-- End Portfolio Projects -->
 
-		<div class="grey-doll"></div>
+		
 	</div>
 
 </div>

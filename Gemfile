@@ -10,6 +10,17 @@ gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
+group :development do
+  
+  gem 'meta_request', '0.2.0'
+
+  gem 'annotate', ">=2.5.0" 
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'bullet'
+
+end
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

@@ -5,7 +5,6 @@
     <%= stylesheet_link_tag    "application", media: "all" %>
     <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application" %>
-
     <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,10 +17,9 @@
           <%= link_to "", '#', id: "logo" %>
           <nav class="nav pull-right">
             <ul class="nav pull-right">
-              <li><%= link_to "home",    '#profile' %></li>
-              <li><%= link_to "about",    '#about' %></li>
-              <li><%= link_to "portfolio",    '#portfolio' %></li>
-              <li><%= link_to "contact", '#contact' %></li>
+              <li><%= link_to "Genral text", general_texts_path%></li>
+              <li><%= link_to "Photos", photos_path %></li>
+              <li><%= link_to "Back to website", root_url %></li>
             </ul>
           </nav>
         </div>
@@ -30,8 +28,6 @@
     
       <%= yield %>
     
-    <div id="back-to-top" style="display: block;">
-      <a href="#">Back to top</a>
-    </div>
+    
   </body>
 </html>
